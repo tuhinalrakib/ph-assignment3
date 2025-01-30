@@ -9,14 +9,20 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CDN link -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Kit CDN -->
+    <script src="https://kit.fontawesome.com/3dba45dead.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
-                text: '#111111',
-                accent: '#179800'
+                "text-color": '#111111',
+                accent: '#179800',
+                'primary-color':'#ffffff'
               }
             }
           }
@@ -24,52 +30,53 @@
       </script>
 
 </head>
-<body>
-    <header class="md:container mx-auto">
-        <nav>
+<body class="sora-font">
+    <header>
+        <nav class="container mx-auto px-4">
             <div class="navbar">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <img class="md:w-40 md:h-14" src="./c2-assets/logo-header.png" alt="">
+                  <img class="hidden md:flex" src="./c2-assets/logo-header.png" alt="">
+                  <img class="flex md:hidden" src="./c2-assets/logo-footer.png" alt="">
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden md:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 3</a></li>
+                    <li><a class="text-xl mr-4">Product</a></li>
+                    <li><a class="text-xl mr-4">Services</a></li>
+                    <li><a class="text-xl">Conatct us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn">Button</a>
+                <div class="navbar-end ml-20">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Conatct us</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-magnifying-glass mr-5 w-7 h-6 cursor-pointer"></i>
+                    <i class="fa-solid fa-cart-shopping w-7 h-6 mr-6 cursor-pointer"></i>
+                    <a class="btn hidden md:flex mr-3 px-7 py-3 bg-primary-color border-accent text-xl rounded-lg text-center transition-all duration-300 hover:bg-orange-700 font-normal">Login</a>
+                    <a class="btn hidden md:flex mr-3 px-7 py-3 bg-accent text-xl rounded-lg text-center text-primary-color transition-all duration-300 hover:bg-red-500 font-normal">Register</a>
                 </div>
-              </div>
+            </div>
         </nav>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    
 </body>
 </html>
