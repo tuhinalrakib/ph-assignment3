@@ -22,16 +22,21 @@
               colors: {
                 "text-color": '#111111',
                 accent: '#179800',
-                'primary-color':'#ffffff'
+                'primary-color':'#ffffff',
+                'secondary':'#EFEBE3'
               }
             }
           }
         }
       </script>
-
+    <style>
+      .sora-font{
+        font-family: "Sora", serif;
+      }
+    </style>
 </head>
 <body class="sora-font">
-    <header class="bg-gradient-to-b from-[#ffffff] to-[#EFEBE3]">
+    <header class="bg-gradient-to-b from-[#ffffff] to-[#EFEBE3] mb-36">
         <nav class="container mx-auto px-4 mb-24">
             <div class="navbar">
                 <div class="navbar-start">
@@ -69,8 +74,8 @@
                             <li><a class="text-xl cursor-pointer">Conatct us</a></li>
                         </ul>
                     </div>
-                    <i class="fa-solid fa-magnifying-glass mr-5 w-7 h-6 cursor-pointer btn hidden md:flex"></i>
-                    <i class="fa-solid fa-cart-shopping w-7 h-6 mr-6 cursor-pointer btn hidden md:flex"></i>
+                    <i class="fa-solid fa-magnifying-glass bg-white border-none mr-5 w-7 h-6 cursor-pointer btn hidden md:flex"></i>
+                    <i class="fa-solid fa-cart-shopping w-7 h-6 mr-6 bg-white border-none cursor-pointer btn hidden md:flex"></i>
                     <a class="btn hidden md:flex mr-3 px-7 py-3 bg-primary-color border-accent text-xl rounded-lg text-center transition-all duration-300 hover:bg-orange-700 font-normal hover:text-white hover:border-none">Login</a>
                     <a class="btn hidden md:flex mr-3 px-7 py-3 bg-accent text-xl rounded-lg text-center text-primary-color transition-all duration-300 hover:bg-red-500 font-normal">Register</a>
                 </div>
@@ -84,6 +89,34 @@
           <img src="./c2-assets/hero-vegetables.png" alt="">
         </div>
     </header>
-    
+    <main>
+      <!-- Services -->
+       <div class="container mx-2 md:mx-auto mb-36">
+        <h1 class="text-accent mb-12 font-semibold text-4xl">Services</h1>
+        <div class="flex flex-col md:flex-row  gap-6 justify-center items-center">
+          <div class="bg-secondary flex flex-col items-center rounded-2xl">
+            <div class="mt-8 mb-6 bg-white w-36 h-36 rounded-full flex justify-center items-center">
+              <img class="mt-8 mb-6" src="./c2-assets/service.png" alt="">
+            </div>
+            <h3 class="font-semibold text-2xl mb-3">24/7 Services</h3>
+            <p class="mx-8 mb-11 text-center">Our 24/7 delivery service ensures fast, reliable, and convenient access to essentials anytime, day or night, for ultimate customer satisfaction.</p>
+          </div>
+          <div class="bg-secondary flex flex-col items-center rounded-2xl">
+            <div class="mt-8 mb-6 bg-white w-36 h-36 rounded-full flex justify-center items-center">
+              <img class="mt-8 mb-6" src="./c2-assets/delivery.png" alt="">
+            </div>
+            <h3 class="font-semibold text-2xl mb-3">Fast Delivery</h3>
+            <p class="mx-8 mb-11 text-center">We ensures quick, efficient shipping, saving time and enhancing customer satisfaction with speed, reliability, and convenience for urgent needs.</p>
+          </div>
+          <div class="bg-secondary flex flex-col items-center rounded-2xl">
+            <div class="mt-8 mb-6 bg-white w-36 h-36 rounded-full flex justify-center items-center">
+              <img src="./c2-assets/healthy.png" alt="">
+            </div>
+            <h3 class="font-semibold text-2xl mb-3">Healthy Product</h3>
+            <p class="mx-8 mb-11 text-center">Healthy products include organic foods, natural supplements, whole grains, fresh fruits, vegetables, lean proteins, herbal teas, probiotics, nuts, seeds, and superfoods.</p>
+          </div>
+        </div>
+       </div>
+    </main>
 </body>
 </html>
