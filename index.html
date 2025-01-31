@@ -24,6 +24,11 @@
                 accent: '#179800',
                 'primary-color':'#ffffff',
                 'secondary':'#EFEBE3'
+              },
+              backgroundImage: {
+                'card-pattern': "linear-gradient(to bottom right, #53DB3A), url('./c2-assets/vegetable-offer.png')",
+
+                
               }
             }
           }
@@ -33,6 +38,9 @@
       .sora-font{
         font-family: "Sora", serif;
       }
+      .popular-product-card{
+        background-image: ;
+      }
     </style>
 </head>
 <body class="sora-font">
@@ -41,7 +49,7 @@
             <div class="navbar">
                 <div class="navbar-start">
                   <img class="hidden md:flex" src="./c2-assets/logo-header.png" alt="">
-                  <img class="flex md:hidden" src="./c2-assets/logo-footer.png" alt="">
+                  <img class="flex md:hidden" src="./c2-assets/sm-navbar.png" alt="">
                 </div>
                 <div class="navbar-center hidden md:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -82,7 +90,7 @@
             </div>
         </nav>
         <!-- Banner Section -->
-        <div class="flex flex-col justify-center items-center text-center mx-0 md:mx-64">
+        <div class="flex flex-col justify-center items-center text-center mx-4 lg:mx-64">
           <h1 class="text-text-color text-5xl font-semibold leading-tight mx-3 mb-8">Freshness <span class="text-accent">You Can<br>
             Count</span> On, Prices You’ll Love!</h1>
           <p class="text-text-color text-xl mx-3">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
@@ -92,8 +100,8 @@
     <main>
       <!-- Services -->
        <div class="container mx-2 md:mx-auto mb-36">
-        <h1 class="text-accent mb-12 font-semibold text-4xl">Services</h1>
-        <div class="flex flex-col md:flex-row  gap-6 justify-center items-center">
+        <h1 class="mx-2 md:mx-32 text-accent mb-12 font-semibold text-4xl">Services</h1>
+        <div class="flex flex-col md:flex-row  gap-6 mx-2 md:mx-32 mb-11">
           <div class="bg-secondary flex flex-col items-center rounded-2xl">
             <div class="mt-8 mb-6 bg-white w-36 h-36 rounded-full flex justify-center items-center">
               <img class="mt-8 mb-6" src="./c2-assets/service.png" alt="">
@@ -113,10 +121,163 @@
               <img src="./c2-assets/healthy.png" alt="">
             </div>
             <h3 class="font-semibold text-2xl mb-3">Healthy Product</h3>
-            <p class="mx-8 mb-11 text-center">Healthy products include organic foods, natural supplements, whole grains, fresh fruits, vegetables, lean proteins, herbal teas, probiotics, nuts, seeds, and superfoods.</p>
+            <p class="mx-8 mb-11 text-center">Healthy products include organic foods, natural supplements, fresh fruits, vegetables, lean proteins, herbal teas, probiotics, nuts, seeds, and superfoods.</p>
           </div>
         </div>
        </div>
+       <!-- Popular Products -->
+        <div class=" bg-secondary pt-32">
+          <h1 class="container mx-2 md:mx-32 mb-11 text-accent text-5xl">Popular Products</h1>
+          <div class="container mx-2 md:mx-32 mb-11 flex gap-6">
+            <div class="card bg-gradient-to-br from-[#53DB3A]  w-96 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title text-primary-color mt-5 mb-4 text-3xl font-semibold">30% off</h2>
+                <p class="mb-5">Discover a world of treats,toys and essentials handpicked for</p>
+                <div class="card-actions justify-start mb-28">
+                  <button class="btn btn-primar-color px-6 text-xl">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- Ratings -->
+             <div class="grid grid-cols-3 grid-rows-3 gap-6">
+                <div class="bg-primary-color rounded-xl flex justify-center items-center gap-4">
+                  <div class="my-3 ml-3 w-20 h-20">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-3 mb-2">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <h6>4.5</h6>
+                    </div>
+                    <h2 class="text-xl font-medium mr-9 mb-1">Onion 1 Kg</h2>
+                    <h6 class="text-xs font-medium">$39.99</h6>
+                  </div>
+                </div>
+                <div class="bg-primary-color rounded-xl flex justify-center items-center gap-4">
+                  <div class="my-3 ml-3 w-20 h-20">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-3 mb-2">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <h6>4.5</h6>
+                    </div>
+                    <h2 class="text-xl font-medium mr-9 mb-1">Onion 1 Kg</h2>
+                    <h6 class="text-xs font-medium">$39.99</h6>
+                  </div>
+                </div>
+                <div class="bg-primary-color rounded-xl flex justify-center items-center gap-4">
+                  <div class="my-3 ml-3 w-20 h-20">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-3 mb-2">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <h6>4.5</h6>
+                    </div>
+                    <h2 class="text-xl font-medium mr-9 mb-1">Onion 1 Kg</h2>
+                    <h6 class="text-xs font-medium">$39.99</h6>
+                  </div>
+                </div>
+                <div class="bg-primary-color rounded-xl flex justify-center items-center gap-4">
+                  <div class="my-3 ml-3 w-20 h-20">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-3 mb-2">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <h6>4.5</h6>
+                    </div>
+                    <h2 class="text-xl font-medium mr-9 mb-1">Onion 1 Kg</h2>
+                    <h6 class="text-xs font-medium">$39.99</h6>
+                  </div>
+                </div>
+                <div class="bg-primary-color rounded-xl flex justify-center items-center gap-4">
+                  <div class="my-3 ml-3 w-20 h-20">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-3 mb-2">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <h6>4.5</h6>
+                    </div>
+                    <h2 class="text-xl font-medium mr-9 mb-1">Onion 1 Kg</h2>
+                    <h6 class="text-xs font-medium">$39.99</h6>
+                  </div>
+                </div>
+                <div class="bg-primary-color rounded-xl flex justify-center items-center gap-4">
+                  <div class="my-3 ml-3 w-20 h-20">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-3 mb-2">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <h6>4.5</h6>
+                    </div>
+                    <h2 class="text-xl font-medium mr-9 mb-1">Onion 1 Kg</h2>
+                    <h6 class="text-xs font-medium">$39.99</h6>
+                  </div>
+                </div>
+                <div class="bg-primary-color rounded-xl flex justify-center items-center gap-4">
+                  <div class="my-3 ml-3 w-20 h-20">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-3 mb-2">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <h6>4.5</h6>
+                    </div>
+                    <h2 class="text-xl font-medium mr-9 mb-1">Onion 1 Kg</h2>
+                    <h6 class="text-xs font-medium">$39.99</h6>
+                  </div>
+                </div>
+                <div class="bg-primary-color rounded-xl flex justify-center items-center gap-4">
+                  <div class="my-3 ml-3 w-20 h-20">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-3 mb-2">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <h6>4.5</h6>
+                    </div>
+                    <h2 class="text-xl font-medium mr-9 mb-1">Onion 1 Kg</h2>
+                    <h6 class="text-xs font-medium">$39.99</h6>
+                  </div>
+                </div>
+                <div class="bg-primary-color rounded-xl flex justify-center items-center gap-4">
+                  <div class="my-3 ml-3 w-20 h-20">
+                    <img src="./c2-assets/onion.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-3 mb-2">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <h6>4.5</h6>
+                    </div>
+                    <h2 class="text-xl font-medium mr-9 mb-1">Onion 1 Kg</h2>
+                    <h6 class="text-xs font-medium">$39.99</h6>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
     </main>
 </body>
 </html>
