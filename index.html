@@ -46,6 +46,7 @@
       .sora-font {
         font-family: "Sora", serif;
       }
+      
     </style>
   </head>
   <body class="sora-font relative">
@@ -120,7 +121,7 @@
         class="flex flex-col justify-center items-center text-center mx-4 lg:mx-64"
       >
         <h1
-          class="text-text-color text-5xl font-semibold leading-tight mx-3 mb-8"
+          class="text-text-color text-5xl font-semibold leading-tight animate-pulse mx-3 mb-8"
         >
           Freshness
           <span class="text-accent"
@@ -186,6 +187,64 @@
           </div>
         </div>
       </div>
+      <!-- <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" /> -->
+
+            <!-- Customer Reviews Section -->
+            <div class="container mx-2 md:mx-14 mb-36">
+              <h1 class="text-accent text-4xl font-semibold mb-12">Customer Reviews</h1>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-secondary p-6 rounded-xl shadow-lg">
+                  <div class="flex items-center gap-4 mb-4">
+                    <img src="./c2-assets/customer1.jpg" alt="User" class="w-14 h-14 rounded-full" />
+                    <div>
+                      <h4 class="text-xl font-medium">John Doe</h4>
+                      <div class="rating">
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-text-color">Amazing quality and fast delivery! The vegetables were fresh and packed well.</p>
+                </div>
+                <div class="bg-secondary p-6 rounded-xl shadow-lg">
+                  <div class="flex items-center gap-4 mb-4">
+                    <img src="./c2-assets/customer2.jpg" alt="User" class="w-14 h-14 rounded-full" />
+                    <div>
+                      <h4 class="text-xl font-medium">Sarah Smith</h4>
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-text-color">I love the freshness of the products! Will definitely order again.</p>
+                </div>
+                <div class="bg-secondary p-6 rounded-xl shadow-lg">
+                  <div class="flex items-center gap-4 mb-4">
+                    <img src="./c2-assets/customer1.jpg" alt="User" class="w-14 h-14 rounded-full" />
+                    <div>
+                      <h4 class="text-xl font-medium">Michael Lee</h4>
+                      <div class="rating">
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-text-color">Great prices and excellent service. Highly recommended!</p>
+                </div>
+              </div>
+            </div>
+      
+
       <!-- Popular Products -->
       <div class="bg-secondary pt-11 md:pt-32 pb-11 md:pb-36 mb-11 md:mb-36">
         <h1 class="container mx-2 md:mx-14 mb-12 text-accent text-3xl md:text-5xl">Popular Products</h1>
@@ -201,7 +260,7 @@
                 Discover a world of treats,toys and essentials handpicked for
               </p>
               <div class="card-actions justify-start mb-36">
-                <button class="btn btn-primar-color px-6 text-xl">
+                <button class="btn btn-primar-color px-6 text-xl hover:bg-[#a29bfe]">
                   Buy Now
                 </button>
               </div>
@@ -411,7 +470,7 @@
           <div class="flex mr-3 md:mr-0 bg-[#115414] justify-around rounded-3xl">
             <div class="md:my-10 md:ml-10 my-4 ml-2">
               <img src="./c2-assets/dawat-logo.png" alt="dawat logo">
-              <button class="md:mt-7 mt-5 md:py-3 py-2 px-2 md:px-8 text-primary-color rounded-xl md:mb-6 mb-4 bg-[#63B76D] text-sm md:text-xl">Cook Exotic Dishes</button>
+              <button class="md:mt-7 mt-5 md:py-3 py-2 px-2 md:px-8 text-primary-color rounded-xl md:mb-6 mb-4 bg-[#63B76D] hover:bg-[#e74c3c] text-sm md:text-xl">Cook Exotic Dishes</button>
               <h1 class="md:text-3xl text-xl text-primary-color">UP to 20% OFF</h1>
             </div>
             <div class="mt-8">
@@ -421,7 +480,7 @@
           <div class="flex mr-3 md:mr-0 bg-[#102861] gap-3 justify-around rounded-2xl">
             <div class="ml-7">
               <img class="md:mt-5 mt-2 mb-2 md:mb-4" src="./c2-assets/india-gate-logo.png" alt="dawat logo">
-              <button class="bg-[#2A4D97] text-sm md:text-xl md:py-3 md:px-5 py-3 px-3 rounded-xl text-primary-color">Cook Exotic Dishes</button>
+              <button class="bg-[#2A4D97] hover:bg-[#1abc9c] text-sm md:text-xl md:py-3 md:px-5 py-3 px-3 rounded-xl text-primary-color">Cook Exotic Dishes</button>
               <h1 class="text-primary-color text-2xl md:text-4xl mt-6">UP to 20% OFF</h1>
             </div>
             <div>
@@ -440,7 +499,7 @@
           <h1 class="text-xl md;text-4xl font-semibold mb-5 text-accent md:text-text-color">Get Grocery News!</h1>
           <p class="text-xl text-text-color mb-9">Exclusive training tips, ticks, product deals and more.</p>
           <input type="email" placeholder="Enter Your Email" class="input input-bordered w-80 md:w-full max-w-md pd-2 md:p-5" />
-          <button class="bg-accent text-primary-color text-xl py-2 px-7 mt-4 mb-2 md:mb-0 md:mt-9 rounded-lg">Subscribe</button>
+          <button class="bg-accent text-primary-color text-xl py-2 px-7 mt-4 mb-2 md:mb-0 md:mt-9 rounded-lg hover:bg-[#0984e3]">Subscribe</button>
         </div>
        </div>
     </main>
@@ -457,10 +516,10 @@
       <div>
         <h6 class="mb-3">Follow us</h6>
         <div class="flex gap-7">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook cursor-pointer"></i>
+          <i class="fa-brands fa-instagram cursor-pointer"></i>
+          <i class="fa-brands fa-linkedin cursor-pointer"></i>
+          <i class="fa-brands fa-youtube cursor-pointer"></i>
         </div>
       </div>
     </footer>
