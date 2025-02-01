@@ -407,7 +407,7 @@
         <h1 class="text-accent text-4xl font-semibold mb-12">
           Arrival & Offers
         </h1>
-        <div class="flex flex-col md:flex-row items-center gap-6 mb-10 md:mb-96">
+        <div class="flex flex-col md:flex-row items-center gap-6 mb-96 md:mb-96">
           <div class="flex mr-3 md:mr-0 bg-[#115414] justify-around rounded-3xl">
             <div class="md:my-10 md:ml-10 my-4 ml-2">
               <img src="./c2-assets/dawat-logo.png" alt="dawat logo">
@@ -431,28 +431,37 @@
         </div>
       </div>
       <!-- Grocery News Section -->
-       <div class="absolute bottom-80 rounded-3xl container mx-2 md:mx-14 bg-secondary flex flex-col md:flex-row items-center justify-center gap-3 md:gap-32">
-        <img class="my-14" src="./c2-assets/vegetable-busket.png" alt="">
+
+      <div class="absolute bottom-72 md:bottom-12  rounded-3xl container mx-2 md:mx-14 bg-secondary flex flex-col md:flex-row items-center justify-center gap-3 md:gap-32 
+     transform -translate-y-1/2">
+ 
+        <img class="my-5 md:my-14" src="./c2-assets/vegetable-busket.png" alt="">
         <div class="text-center md:text-justify">
           <h1 class="text-xl md;text-4xl font-semibold mb-5 text-accent md:text-text-color">Get Grocery News!</h1>
           <p class="text-xl text-text-color mb-9">Exclusive training tips, ticks, product deals and more.</p>
-          <input type="email" placeholder="Enter Your Email" class="input input-bordered w-full max-w-md p-5" />
-          <button class="bg-accent text-primary-color text-xl py-2 px-7 mt-9 rounded-lg">Subscribe</button>
+          <input type="email" placeholder="Enter Your Email" class="input input-bordered w-80 md:w-full max-w-md pd-2 md:p-5" />
+          <button class="bg-accent text-primary-color text-xl py-2 px-7 mt-4 mb-2 md:mb-0 md:mt-9 rounded-lg">Subscribe</button>
         </div>
        </div>
     </main>
-    <footer class="footer bg-accent pt-80 text-neutral-content flex justify-around items-end gap-12 p-10">
+    <footer class="footer bg-accent pt-96 md:pt-80 text-neutral-content flex flex-col md:flex-row md:justify-around justify-center md:items-end gap-12 p-10">
       <div>
-        <img src="./c2-assets/logo-footer.png" alt="">
+        <img class="mt-6 md:mt-0" src="./c2-assets/logo-footer.png" alt="">
         <p class="text-xl mt-3">Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
       </div>
       <nav>
-        <h6 class="link link-hover no-underline text-xl mb-8">Product</h6>
-        <a class="link link-hover no-underline text-xl mb-8">Services</a>
+        <h6 class="link link-hover no-underline text-xl mb-2 md:mb-8">Product</h6>
+        <a class="link link-hover no-underline text-xl mb-2 md:mb-8">Services</a>
         <a class="link link-hover no-underline text-xl">Contact us</a>
       </nav>
       <div>
-        <h6>Follow us</h6>
+        <h6 class="mb-3">Follow us</h6>
+        <div class="flex gap-7">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
       </div>
     </footer>
   </body>
